@@ -1,6 +1,5 @@
 #include <GL/glut.h>
-#include <iostream>
-#include <GL/freeglut.h>
+#include <math.h>
 using namespace std;
 
 float sudut = 0.0;
@@ -254,27 +253,6 @@ void display(void) {
 
 void draw0() {
 	glClear(GL_COLOR_BUFFER_BIT);
-	/*glColor3f(1.0, 0.0, 0.0);
-	glPointSize(5);
-	glBegin(GL_POINTS);
-		glVertex3f(15.0, 15.0, 0.0);
-		glVertex3f(-15.0, 15.0, 0.0);
-		glVertex3f(-15.0, -15.0, 0.0);
-	glEnd();
-
-	glColor3f(0.0, 1.0, 0.0);
-	glBegin(GL_LINES);
-		glVertex3f(25, 25, 0.0);
-		glVertex3f(175.0, 175.0, 0.0);
-	glEnd();*/
-	//sumbu_koordinat();
-	//lingkaran();
-	//titik_berputar(50);
-	//segitiga();
-	//kotak();
-	//bintang();
-	//tvRusak();
-
 	glFlush();
 }
 
