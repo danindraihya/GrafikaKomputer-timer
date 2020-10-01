@@ -1,6 +1,7 @@
 #include <GL/glut.h>
 #include <iostream>
 #include <GL/freeglut.h>
+#include <math.h>
 using namespace std;
 
 float sudut = 0.0;
