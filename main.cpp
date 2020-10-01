@@ -69,9 +69,9 @@ void drawDot(int x, int y) {
 void sumbu_koordinat() {
 	Point2D_t sumbuX[2] = { {-200.0, 0.0}, {200.0, 0.0} };
 	Point2D_t sumbuY[2] = { {0.0, -200.0}, {0.0, 200.0} };
-	Color_t col = {0.0, 0.0, 1.0};
-	drawLine(sumbuX, 2, col);
-	drawLine(sumbuY, 2, col);
+	Color_t blue = {0.0, 0.0, 1.0};
+	drawLine(sumbuX, 2, blue);
+	drawLine(sumbuY, 2, blue);
 }
 
 void segitiga()
@@ -80,22 +80,22 @@ void segitiga()
 	Point2D_t segitiga02[3] = { {-20.0,-60.0},{20.0,-60.0},{0.0,-100.0} };
 	Point2D_t segitiga03[3] = { {60.0,20.0},{60.0,-20.0},{100.0,0.0} };
 	Point2D_t segitiga04[3] = { {-60.0,20.0},{-60.0,-20.0},{-100.0,0.0} };
-	Color_t col = { 0.0,1.0,0.0 };
-	drawPolygon(segitiga01,3,col);
-	drawPolygon(segitiga02,3,col);
-	drawPolygon(segitiga03, 3, col);
-	drawPolygon(segitiga04, 3, col);
+	Color_t green = { 0.0,1.0,0.0 };
+	drawPolygon(segitiga01, 3, green);
+	drawPolygon(segitiga02, 3, green);
+	drawPolygon(segitiga03, 3, green);
+	drawPolygon(segitiga04, 3, green);
 
-	Color_t col1 = { 1.0,0.0,0.0 };
+	Color_t red = { 1.0,0.0,0.0 };
 	Point2D_t segitiga05[3] = { {40.0,40.0},{60.0,100.0},{80.0,40.0} };
 	Point2D_t segitiga06[3] = { {-40.0,40.0},{-60.0,100.0},{-80.0,40.0} };
 	Point2D_t segitiga07[3] = { {-40.0,-40.0},{-60.0,-100.0},{-80.0,-40.0} };
 	Point2D_t segitiga08[3] = { {40.0,-40.0},{60.0,-100.0},{80.0,-40.0} };
 
-	drawPolyline(segitiga05,3,col1);
-	drawPolyline(segitiga06, 3, col1);
-	drawPolyline(segitiga07, 3, col1);
-	drawPolyline(segitiga08, 3, col1);
+	drawPolyline(segitiga05, 3, red);
+	drawPolyline(segitiga06, 3, red);
+	drawPolyline(segitiga07, 3, red);
+	drawPolyline(segitiga08, 3, red);
 }
 
 void kotak()
@@ -104,11 +104,11 @@ void kotak()
 	Point2D_t kotak02[4] = { {-100.0,40.0}, {-100.0,80.0}, {-140.0,80.0}, {-140.0,40.0} };
 	Point2D_t kotak03[4] = { {-100.0,-40.0}, {-100.0,-80.0}, {-140.0,-80.0}, {-140.0,-40.0} };
 	Point2D_t kotak04[4] = { {100.0,-40.0}, {100.0,-80.0}, {140.0,-80.0}, {140.0,-40.0} };
-	Color_t col = { 0.0,0.0,1.0 };
-	drawPolygon(kotak01, 4, col);
-	drawPolygon(kotak02, 4, col);
-	drawPolygon(kotak03, 4, col);
-	drawPolygon(kotak04, 4, col);
+	Color_t blue = { 0.0,0.0,1.0 };
+	drawPolygon(kotak01, 4, blue);
+	drawPolygon(kotak02, 4, blue);
+	drawPolygon(kotak03, 4, blue);
+	drawPolygon(kotak04, 4, blue);
 }
 
 void bintang()
@@ -118,14 +118,14 @@ void bintang()
 	Point2D_t bintang03[10]{ {0, 204}, {19,144}, {77, 144}, {25, 109}, {47, 54}, {0, 84}, {-47, 54}, {-25, 109}, {-77, 144}, {-19, 144} };
 	Point2D_t bintang04[10]{ {-99, 90}, {-118, 30}, {-176, 30}, {-124, -5}, {-146, -60}, {-99, -30}, {-52, -60}, {-74, -5}, {-22, 30}, {-80, 30} };
 	Point2D_t bintang05[10]{ {0, -24}, {19, -84}, {77, -84}, {25, -119}, {47, -174}, {0, -144}, {-47, -174}, {-25, -119}, {-77, -84}, {-19, -84} };
-	Color_t col = {1.0, 0.0, 0.0};
-	Color_t col1 = {0.0, 0.0, 1.0};
+	Color_t red = {1.0, 0.0, 0.0};
+	Color_t blue = {0.0, 0.0, 1.0};
 	
-	drawPolyline(bintang01, 10, col);
-	drawPolyline(bintang02, 10, col1);
-	drawPolyline(bintang03, 10, col1);
-	drawPolyline(bintang04, 10, col1);
-	drawPolyline(bintang05, 10, col1);
+	drawPolyline(bintang01, 10, red);
+	drawPolyline(bintang02, 10, blue);
+	drawPolyline(bintang03, 10, blue);
+	drawPolyline(bintang04, 10, blue);
+	drawPolyline(bintang05, 10, blue);
 }
 
 void lingkaran()
