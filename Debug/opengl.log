@@ -1,0 +1,13 @@
+﻿  main.cpp
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(188,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(198,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(218,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(229,17): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(229,14): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(230,18): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(230,14): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(231,17): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(231,14): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(232,18): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Users\insanity\source\repos\opengl\opengl\main.cpp(232,14): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+  opengl.vcxproj -> C:\Users\insanity\source\repos\opengl\Debug\opengl.exe
