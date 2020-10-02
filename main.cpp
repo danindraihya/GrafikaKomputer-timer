@@ -3,11 +3,7 @@
 #include <GL/freeglut.h>
 using namespace std;
 
-float sudut = 0.0;
-float sudut1 = 0.0;
-float sudut2 = 0.0;
-float sudut3 = 0.0;
-float sudut4 = 0.0;
+float sudut[5] = {0,0,0,0,0};
 
 typedef struct {
 	float x;
@@ -171,52 +167,52 @@ void lingkaran()
 
 void titik_berputar(int r)
 {
-	float teta = (float)(sudut / 57.3);
+	float teta = (float)(sudut[0] / 57.3);
 	int x = (int)(r * cos(teta));
 	int y = (int)(r * sin(teta));
 	drawDot(x,y);
-	sudut = sudut + 1;
-	if (sudut <= -360) sudut = 0.0;
+	sudut[0] = sudut[0] + 1;
+	if (sudut[0] <= -360) sudut[0] = 0.0;
 }
 
 void titik_berputar1(int r) //kiri bawah
 {
-	float teta = (float)(sudut1 / 57.3);
+	float teta = (float)(sudut[1] / 57.3);
 	int x = (int)(r * cos(teta) + 100);
 	int y = (int)(r * sin(teta) + 100);
 	drawDot(x, y);
-	sudut1 = sudut1 + 0.5;
-	if (sudut1 <= -360) sudut1 = 0.0;
+	sudut[1] = sudut[1] + 0.5;
+	if (sudut[1] <= -360) sudut[1] = 0.0;
 }
 
 void titik_berputar2(int r) //kanan atas
 {
-	float teta = (float)(sudut2 / 57.3);
+	float teta = (float)(sudut[2] / 57.3);
 	int x = (int)(r * cos(teta) - 100);
 	int y = (int)(r * sin(teta) - 100);
 	drawDot(x, y);
-	sudut2 = sudut2 - 0.3;
-	if (sudut2 <= -360) sudut2 = 0.0;
+	sudut[2] = sudut[2] - 0.3;
+	if (sudut[2] <= -360) sudut[2] = 0.0;
 }
 
 void titik_berputar3(int r) //kanan bawah
 {
-	float teta = (float)(sudut3 / 57.3);
+	float teta = (float)(sudut[3] / 57.3);
 	int x = (int)(r * cos(teta) + 100);
 	int y = (int)(r * sin(teta) - 100);
 	drawDot(x, y);
-	sudut3 = sudut3 + 2;
-	if (sudut3 <= -360) sudut3 = 0.0;
+	sudut[3] = sudut[3] + 2;
+	if (sudut[3] <= -360) sudut[3] = 0.0;
 }
 
 void titik_berputar4(int r) //kiri atas
 {
-	float teta = (float)(sudut4 / 57.3);
+	float teta = (float)(sudut[4] / 57.3);
 	int x = (int)(r * cos(teta) - 100);
 	int y = (int)(r * sin(teta) + 100);
 	drawDot(x, y);
-	sudut4 = sudut4 + 0.7;
-	if (sudut4 <= -360) sudut4 = 0.5;
+	sudut[4] = sudut[4] + 0.7;
+	if (sudut[4] <= -360) sudut[4] = 0.5;
 }
 
 void tvRusak() {
@@ -254,44 +250,20 @@ void display(void) {
 
 void draw0() {
 	glClear(GL_COLOR_BUFFER_BIT);
-	/*glColor3f(1.0, 0.0, 0.0);
-	glPointSize(5);
-	glBegin(GL_POINTS);
-		glVertex3f(15.0, 15.0, 0.0);
-		glVertex3f(-15.0, 15.0, 0.0);
-		glVertex3f(-15.0, -15.0, 0.0);
-	glEnd();
-
-	glColor3f(0.0, 1.0, 0.0);
-	glBegin(GL_LINES);
-		glVertex3f(25, 25, 0.0);
-		glVertex3f(175.0, 175.0, 0.0);
-	glEnd();*/
-	//sumbu_koordinat();
-	//lingkaran();
-	//titik_berputar(50);
-	//segitiga();
-	//kotak();
-	//bintang();
-	//tvRusak();
-
 	glFlush();
 }
 
-void Initialize()
-{
+void Initialize() {
 	glClearColor(1.0, 1.0, 1.0, 0.0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluOrtho2D(-200.0, 200.0, -200.0, 200.0);
 }
 
-void timer(int)
-{
+void timer(int) {
 	glutPostRedisplay();
 	glutTimerFunc(10, timer, 0);
 }
-
 
 int main(int argc, char **argv) {
 	glutInit(&argc, argv);
